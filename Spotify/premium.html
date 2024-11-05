@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylePremium.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Bem vindo ao Spotify</title>
+</head>
+<body>
+    <!--Navbar-->  
+   <navbar id="navbar">
+        <div class="navbar-container">
+            <img src="imagens/logo.png" alt="" class="logo">
+           <ul class="navbar-items">
+            <li><a href="premium.html" class="navbar-item">Premium</a></li>
+            <li><a href="ajuda.html" class="navbar-item">Ajuda</a></li>
+            <li><a href="baixar.html" class="navbar-item">Baixar</a></li>
+            <li><a href="inscrever.html" class="navbar-item">Inscrever-se</a></li>
+            <li><a href="login.html" class="navbar-item">Entrar</a></li>
+           </ul>
+        </div>
+   </navbar>
+   <!-- Showcase-->
+    <div id="showcasePremium">
+        <div class="showcase-containerPremium">
+            <h2>Torne-se premium</h2>
+            <p>sem precisar de cartão de credito </p>
+                <form action="cadastro.php" method="POST" autocomplete="off">
+                    <p><label for="inome">Nome</label>
+                        <input type="text" name="nome" id="txtnome"></p>
+                    <p><label for="email">Email</label>
+                        <input type="text" name="email" id="txtemail"></p>
+                    <p><label for="cpf">CPF</label>
+                        <input type="text" name="cpf" id="txtcpf"></p>
+                    <p><label for="cartao">Numero do Cartão</label>
+                        <input type="text" name="ncartao" id="txtnucartao"></p>
+                    <p><label for="validade">Validade do Cartão</label>
+                        <input type="text" name="valcartao" id="txtvalidadecartao"></p>
+                    <p><label for="cvv">CVV</label>
+                        <input type="text" name="cvv" id="txtcvv"></p>
+                </form>
+        </div>
+    </div>
+
+      <!-- Footer-->
+      <footer id="footer">
+        <div class="footer-content">
+             <img src="imagens/logo.png" alt="" class="logo">
+                <ul class="footer-menu">
+                    <p>Empresas</p>
+                    <li class="footer-menu-item">
+                        Sobre
+                    </li>
+                    <li class="footer-menu-item">
+                        Empregos
+                    </li>
+                    <li class="footer-menu-item">
+                        For the record
+                    </li>
+                </ul>
+                
+                <ul class="footer-menu">
+                    <p>Comunidades</p>
+                    <li class="footer-menu-item">
+                        Para Artistas
+                    </li>
+                    <li class="footer-menu-item">
+                        Desenvolvedores
+                    </li>
+                    <li class="footer-menu-item">
+                        Marcas
+                    </li>
+                    <li class="footer-menu-item">
+                        Investidores
+                    </li>
+                    <li class="footer-menu-item">
+                        Fornecedores
+                    </li>
+                </ul>
+                
+                <ul class="footer-menu">
+                    <p>Links Uteis</p>
+                    <li class="footer-menu-item">
+                        Ajuda
+                    </li>
+                    <li class="footer-menu-item">
+                        Player Web
+                    <li class="footer-menu-item">
+                        App Movel
+                    </li>
+                </ul>
+                
+                <div class="socials">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                </div>
+        </div>
+        <div class="footer-info">
+            <ul class="footer-info-items">
+                <li class="footer-info-item">Legal</li>
+                <li class="footer-info-item">Cetro de Privacidade</li>
+                <li class="footer-info-item">Politica de Privacidade</li>
+                <li class="footer-info-item">Cookies</li>
+                <li class="footer-info-item">Sobre anúncios</li>
+            </ul>
+
+            <div class="rights">
+                <div class="country">
+                    <p>Brasil</p>
+                    <img src="imagens/brasil-flag.png" alt="" class="brasil-flag">
+                </div>
+                <p>&copy; 2024 Spotify AB</p>
+            </div>
+        </div>
+      </footer>
+      <!-- Script -->
+      <script src="https://kit.fontawesome.com/41a7f26f24.js" crossorigin="anonymous">
+      </script>
+</body>
+</html>
