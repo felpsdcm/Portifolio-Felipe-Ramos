@@ -1,0 +1,291 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'poppins', sans-serif;
+}
+
+:root{
+    --cor-padrao-fonte:#fff;
+    --cor-link-topo: #fff;
+    --cor-font-escura: #000;
+    --cor-botao-pesquisa-top:#ff5361;
+    --cor-hover-btn: #96045e;
+    --cor-fonte-sub-titulo: #333;
+    --cor-hover-ganhar-dinheiro:#05af2a;
+    --cor-topo-celular:#000;
+    --cor-busca-rodape-celular:#ddd;
+}
+
+
+.destaque{
+    width: 100%;
+    min-height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('/img/praia.jpg');
+    background-size: cover;
+    background-position: center;
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 7%;
+}
+
+nav .menu-outline{
+    display: none;
+}
+
+.logo{
+    width: 140px;
+    cursor: pointer;
+}
+
+.nav-link li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+
+.nav-link li a{
+    text-decoration: none;
+    color: var(--cor-link-topo);
+}
+
+.active{
+    position: relative;
+
+}
+
+.active::after{
+    content: '';
+    background-color: var(--cor-link-topo) ;
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -12px;
+    border-radius: 2px;
+}
+
+.cadastro-btn{
+    background:var(--cor-link-topo);
+    color: var(--cor-font-escura);
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.cadastro-btn:hover{
+    background-color: var(--cor-botao-pesquisa-top);
+    color: var(--cor-link-topo)
+}
+
+.container{
+    padding: 0 7%;
+}
+
+.destaque h1{
+    font-size: 4vh;
+    font-weight: 500;
+    text-align: center;
+    color:var(--cor-link-topo);
+    padding-top: 22%;
+}
+
+.busca-site{
+    background-color: var(--cor-link-topo);
+    width: 70%;
+    margin: 30px auto;
+    padding: 6px 10px 6px 30px;
+    border-radius: 50px;
+}
+
+.local-input{
+    flex:1;
+}
+
+.busca-site form label{
+    font-weight: 600;
+}
+
+.busca-site form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+} 
+
+.busca-site form input{
+    display: block;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.busca-site form button{
+    background-color: var(--cor-botao-pesquisa-top);
+    width: 55px;
+    height: 55px;
+    border: none;
+    outline: none;
+    cursor: pointer;   
+    border-radius: 50%;
+    
+}
+
+.busca-site form button img{
+    width: 50%;
+    margin-top: 3px ;
+    margin-left: 2px;
+}
+
+.sub-titulo{
+    margin: 50px 0 20px;
+    font-size: 2.2vw;
+    font-weight: 500;
+    color: var(--cor-fonte-sub-titulo);
+}
+
+.exclusivos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+    grid-gap: 30px;
+}
+
+.exclusivos div img{
+    width: 100%;
+    border-radius: 10px;
+    
+}
+
+.exclusivos div{
+    position: relative;
+}
+
+.exclusivos div span{
+    position: absolute;
+    top: 50%;
+    left: 43%;
+    text-align: center;
+    color: var(--cor-link-topo);
+    transform: translate(-50%,-50%);
+}
+
+.locais-quentes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+    grid-gap: 30px;
+    margin-bottom: 30px;
+    
+}
+
+.locais-quentes div img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.locais-quentes h3{
+    font-weight: 600;
+    margin-top: 10px;
+
+}
+
+.cta{
+    margin: 80px 0;
+    background-image: linear-gradient(to right,#3f2321,transparent),url('../img/praia2.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 5%;
+    color: var(--cor-link-topo);
+}
+
+.cta h3{
+    font-size: 4vw;
+    font-weight: 500;
+    line-height: 5.3vw;
+}
+
+.cta p{
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.cta-btn{
+    display: inline-block;
+    background-color: var(--cor-botao-pesquisa-top);
+    color: var(--cor-link-topo);
+    margin-top: 20px;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+}
+
+.cta-btn:hover{
+    background-color: var(--cor-hover-ganhar-dinheiro);
+}
+
+.stories{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+    grid-gap: 30px;
+    margin-bottom: 30px;
+}
+
+.stories div img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.stories-div{
+    position: relative;
+    text-align: center;
+
+}
+
+.stories p {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 26px;
+    color: var(--cor-padrao-fonte);
+    transform: translate(-50%,-50%);
+}
+
+.ganharbtn{
+    display: block;
+    width: 80%;
+    max-width: 350px;
+    background-color: var(--cor-botao-pesquisa-top);
+    color: var(--cor-link-topo);
+    text-align: center;
+    text-decoration: none;
+    margin: auto;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 20px;
+    
+}
+
+.ganharbtn:hover{
+    background-color: var(--cor-hover-ganhar-dinheiro);
+}
+
+.sobre-nos{
+    text-align: center;
+    font-size: 17px;
+    margin: 80px 0;
+    color: var(--cor-font-escura);
+}
+
+.sobre-nos h2{
+    font-size: 28px;
+    font-size: 500;
+    margin-bottom: 30px;
+    
+}
